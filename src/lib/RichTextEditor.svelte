@@ -12,6 +12,7 @@
     import Placeholder from '@tiptap/extension-placeholder';
     import Typography from '@tiptap/extension-typography';
     import FontFamily from '@tiptap/extension-font-family';
+    import CodeBlock from '@tiptap/extension-code-block';
     import CodeBlockLowlight from '@tiptap/extension-code-block-lowlight';
 
     import {lowlight} from 'lowlight';
@@ -70,7 +71,7 @@
           TextStyle, Color, Placeholder.configure({
             placeholder: 'Use /ai to talk to the AI. Otherwise just type away!'
           }), 
-          Typography, FontFamily, CodeBlockLowlight.configure({
+          Typography, FontFamily, CodeBlock, CodeBlockLowlight.configure({
             lowlight,
             defaultLanguage: 'javascript',
           }),
